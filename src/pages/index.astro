@@ -1,39 +1,8 @@
 ---
-// Component Imports
-import Counter from "../components/Counter";
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
-const pageTitle = "Hello SolidJS";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Home Page";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <style>
-      html,
-      body {
-        font-family: system-ui;
-        margin: 0;
-      }
-      body {
-        padding: 2rem;
-      }
-    </style>
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <main>
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/blog/">Blog</a>
-
-      <Counter client:visible>
-        <h1>{pageTitle}</h1>
-      </Counter>
-    </main>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+</BaseLayout>
