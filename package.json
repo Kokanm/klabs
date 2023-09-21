@@ -11,8 +11,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/preact": "^3.0.0",
     "@astrojs/rss": "^2.0.0",
-    "astro": "^1.9.1"
+    "astro": "^1.9.1",
+    "preact": "^10.17.1"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^6.7.0",
